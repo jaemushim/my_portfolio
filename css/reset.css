@@ -1,0 +1,65 @@
+/* Reset */
+body {
+    font-family: 'Montserrat', 'Noto Sans KR';
+    color: #222;
+}
+strong {
+    color: inherit;
+}
+ul,
+ol {
+    list-style: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+button {
+    outline: none;
+    border: 0px;
+    cursor: pointer;
+    background-color: transparent;
+}
+.slick-slide {
+    outline: none;
+}
+.slick-slide img {
+    width: 100%;
+}
+table caption {
+    display: none;
+}
+table,
+th,
+td {
+    border-collapse: collapse;
+}
+/* UTILL */
+.container {
+    max-width: 1024px;
+    margin: auto;
+    padding: 0 0.5rem;
+}
+.hidden {
+    visibility: hidden;
+}
+
+.ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+}
+.noto {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.mont {
+    font-family: 'Montserrat', sans-serif;
+}
+.clear:after {
+    display: block;
+    content: '';
+    clear: both;
+}

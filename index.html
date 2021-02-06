@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>웹퍼블리셔 심재무입니다.</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+        <!-- Jquery CDN -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+            integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Font Awesome CDN -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+            integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+            crossorigin="anonymous"
+        />
+        <!-- Link  css -->
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <!-- AOS CDN -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="main-content" id="my-scrollbar">
+            <div class="loader-wrapper">
+                <span class="loader"><span class="loader-inner"></span></span>
+            </div>
+
+            <header>
+                <nav class="modal_nav">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#about" class="about">ABOUT</a></li>
+                        <li class="portfolio_btn"><a href="#portfolio">PORTFOLIO</a></li>
+                        <li>
+                            <a href="#" title="이메일">CONTACT</a>
+                            <ul>
+                                <li>E-mail : shimwoan@gmail.com</li>
+                                <li>Phone : 010-9495-1182</li>
+                                <li>Kakaotalk ID : shimwoan</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="top_btn">네비게이션 닫기</div>
+                </nav>
+            </header>
+
+            <main>
+                <div id="home" class="landing">
+                    <div class="center-box">
+                        <span class="type"></span>
+                    </div>
+                    <div class="mouse-icon">
+                        <div class="wheel">스크롤바를 내려 주세요.</div>
+                    </div>
+                </div>
+
+                <!-- NAVBAR -->
+                <header>
+                    <nav id="header" class="navbar">
+                        <div class="container">
+                            <a href="index.html"><div class="logo">jaemu shim</div></a>
+                            <ul class="nav-menu">
+                                <li class="nav-item">
+                                    <a href="#home" class="nav-links">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#about" class="nav-links point">ABOUT</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#portfolio" class="nav-links">PORTFOLIO</a>
+                                </li>
+                            </ul>
+                            <div class="top_btn">네비게이션 열기</div>
+                        </div>
+                    </nav>
+                </header>
+
+                <!-- ABOUT -->
+                <section id="about" class="page page_01 clear">
+                    <div class="container">
+                        <h2>ABOUT</h2>
+                        <div>
+                            <img src="img/me.jpg" alt="프로필사진" />
+                            <div class="col-2">
+                                <ul class="tab_menu clear">
+                                    <li class="active" data-active="1">PROFILE</li>
+                                    <li data-active="2">SKILLS</li>
+                                </ul>
+                                <div class="tab_con">
+                                    <div class="con con1 active">
+                                        <ul>
+                                            <li><span>이름 </span> <span>심재무</span></li>
+                                            <li>
+                                                <span>생년월일 </span> <span>1993년 9월 15일</span>
+                                            </li>
+                                            <li><span>성별 </span> <span>남자</span></li>
+                                            <li>
+                                                <span>거주지 </span>
+                                                <span>충청북도 청주시 흥덕구 봉명동</span>
+                                            </li>
+                                            <li>
+                                                <span>교육이수 </span>
+                                                <span>
+                                                    - 2020년 11월 ~ 2020년 12월 컴퓨터 과학 교양
+                                                    강좌: CS50
+                                                    <small
+                                                        >(하버드 대학교에서 진행하는 컴퓨터과학 기초
+                                                        교양 과목) </small
+                                                    >온라인 강좌 수료 <br />
+                                                    - 2020년 6월 ~ 2020년 11월 이지디자인컴퓨터학원
+                                                    반응형 웹디자인 및 웹 퍼블리싱 ncs 훈련과정 수료
+                                                    <br />
+                                                    - 2020년 3월 ~ 2020년 4월 Modern HTML & CSS From
+                                                    The Beginning 유데미 온라인 강좌 수료
+                                                    <br />
+                                                    - 2020년 4월 ~ 2020년 6월 Modern JavaScript From
+                                                    The Beginning 유데미 온라인 강좌 수료
+                                                    <br />
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span>경력 </span>
+                                                <span>
+                                                    - 2021년 1월 영동군청 영동한지 프로젝트 웹기획안
+                                                    및 제안서 작성 <br />
+                                                    - 2021년 1월 E-REX 홈페이지 디자인 (프리랜서)<br />
+                                                    - 2021년 1월 LOOK 디자인 에듀 홈페이지 퍼블리싱
+                                                    (프리랜서)<br />
+                                                    - 2021년 2월 코리아 익스프레스 홈페이지 디자인
+                                                    및 퍼블리싱,개발 참여중(프리랜서)
+                                                    <br />
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="con con2">
+                                        <ul>
+                                            <li>
+                                                <span>HTML </span>
+                                                <span
+                                                    >웹 표준에 준수한 마크업 / BEM / HTML5 사용
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span>CSS </span>
+                                                <span>부트스트랩 / Tailwind Css / SASS </span>
+                                            </li>
+                                            <li>
+                                                <span>JAVASCRIPT </span>
+                                                <span
+                                                    >다수의 동적인 기능 구현 가능 / jQuery 플러그인
+                                                    사용 / jQuery 오픈소스 활용</span
+                                                >
+                                            </li>
+                                            <li>
+                                                <span>PHP </span>
+                                                <span
+                                                    >로그인,회원가입,장바구니 구현경험 /
+                                                    그누보드,영카트 공부중
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span>Cross Browsing </span>
+                                                <span
+                                                    >ie, chrome, firefox, safari, opera 등
+                                                    브라우저별로 같은 표현 가능</span
+                                                >
+                                            </li>
+                                            <li>
+                                                <span>웹 접근성 </span>
+                                                <span>웹 접근성에 준수한 마크업</span>
+                                            </li>
+                                            <li>
+                                                <span>반응형 웹 </span>
+                                                <span>디바이스에 맞는 유동적인 설계 가능</span>
+                                            </li>
+                                            <li>
+                                                <span>Adobe </span>
+                                                <span>Photoshop, Illustrator 툴 사용 가능</span>
+                                            </li>
+                                            <li>
+                                                <span>커뮤니케이션 </span>
+                                                <span>각 직군과 협업 가능</span>
+                                            </li>
+                                            <li>
+                                                <span>영어 </span>
+                                                <span>문서 읽기, 영어 듣기 가능</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- PORTFOLIO -->
+                <section id="portfolio" class="portfolio mont">
+                    <div class="container">
+                        <h2>PORTFOLIO</h2>
+                        <div class="row item">
+                            <div class="col-1">
+                                <a href="http://lookdesignedu.com/" target="_blank">
+                                    <div class="img-holder">
+                                        <img src="img/look.jpg" alt="룩디자인 홈페이지" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-2">
+                                <ul>
+                                    <li>
+                                        <span class="title">사이트명</span>
+                                        <span class="text">LOOK 디자인 에듀</span>
+                                    </li>
+                                    <li>
+                                        <span class="title">제작기간</span>
+                                        <span class="text">5일 ( 2021년 1월)</span>
+                                    </li>
+                                    <li>
+                                        <span class="title">제작 참여</span>
+                                        <span class="text">웹 퍼블리싱 (100%)</span>
+                                    </li>
+                                    <li>
+                                        <span class="title">제작 페이지</span>
+                                        <span class="text">전 페이지</span>
+                                    </li>
+                                    <li>
+                                        <span class="title">홈페이지 유형</span>
+                                        <span class="text">반응형</span>
+                                    </li>
+                                    <li>
+                                        <span>HTML5, CSS3, J-QUERY, PHOTOSHOP사용</span>
+                                    </li>
+                                </ul>
+                                <a href="http://lookdesignedu.com/" target="_blank" class="button"
+                                    ><div>VIEW SITE</div></a
+                                >
+                            </div>
+                        </div>
+                        <div class="row item">
+                            <div class="col-1">
+                                <a href="http://image1004.shop/" target="_blank">
+                                    <div class="img-holder">
+                                        <img src="img/erex.jpg" alt="이렉스 홈페이지" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-2">
+                                <ul>
+                                    <li>
+                                        <span class="title">사이트명</span>
+                                        <span class="text">이렉스</span>
+                                    </li>
+                                    <li>
+                                        <span class="title">제작기간</span>
+                                        <span class="text">4일 ( 2021년 1월)</span>
+                                    </li>
+                                    <li>
+                                        <span class="title">제작 참여</span>
+                                        <span class="text">웹 디자인 (100%)</span>
+                                    </li>
+                                    <li>
+                                        <span class="title">제작 페이지</span>
+                                        <span class="text">전 페이지</span>
+                                    </li>
+                                    <li>
+                                        <span class="title">홈페이지 유형</span>
+                                        <span class="text">반응형</span>
+                                    </li>
+                                    <li>
+                                        <span>PHOTOSHOP, ILLUSTRATOR 사용</span>
+                                    </li>
+                                </ul>
+                                <a href="http://image1004.shop/" target="_blank" class="button"
+                                    ><div>VIEW SITE</div></a
+                                >
+                            </div>
+                        </div>
+                        <div class="row item cj">
+                            <div class="col-1">
+                                <a href="https://jaemushim.github.io/chengju-si/" target="_blank">
+                                    <div class="img-holder">
+                                        <img src="img/cj.jpg" alt="청주시청 홈페이지" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-2">
+                                <ul>
+                                    <li>
+                                        <span class="title">사이트명</span>
+                                        <span class="text">청주시청 (리뉴얼)</span>
+                                    </li>
+                                    <li>
+                                        <span class="title">제작기간</span>
+                                        <span class="text">10일 (2020년 12월) </span>
+                                    </li>
+                                    <li>
+                                        <span class="title">제작 참여</span>
+                                        <span class="text">웹 디자인 및 퍼블리싱 (100%)</span>
+                                    </li>
+                                    <li>
+                                        <span class="title">제작 페이지</span>
+                                        <span class="text">메인페이지 1, 서브페이지 1</span>
+                                        <p class="page">
+                                            <a
+                                                href="https://jaemushim.github.io/chengju-si/"
+                                                target="_blank"
+                                            >
+                                                https://jaemushim.github.io/chengju-si/
+                                            </a>
+                                            <span> (메인페이지)</span><br />
+                                            <a
+                                                href="https://jaemushim.github.io/chengju-si/pages/sub01.html"
+                                                target="_blank"
+                                            >
+                                                https://jaemushim.github.io/chengju-si/pages/sub01.html
+                                            </a>
+                                            <span>(서브페이지)</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <span class="title">홈페이지 유형</span>
+                                        <span class="text">반응형, 웹표준/웹접근성</span>
+                                    </li>
+                                    <li>
+                                        <span
+                                            >HTML5, CSS3, J-QUERY, JAVA SCRIPT 사용 <br />
+                                            PHOTOSHOP, ILLUSTRATOR 사용</span
+                                        >
+                                    </li>
+                                </ul>
+                                <a
+                                    href="https://jaemushim.github.io/chengju-si/"
+                                    target="_blank"
+                                    class="button"
+                                    ><div>VIEW SITE</div></a
+                                >
+                            </div>
+                        </div>
+                        <div class="row item cj">
+                            <div class="col-1">
+                                <a href="https://jaemushim.github.io/Interior/" target="_blank">
+                                    <div class="img-holder">
+                                        <img src="img/interior.jpg" alt="인테리어 홈페이지" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-2">
+                                <ul>
+                                    <li>
+                                        <span class="title">사이트명</span>
+                                        <span class="text">1st ave. 인테리어 (리뉴얼)</span>
+                                    </li>
+                                    <li>
+                                        <span class="title">제작기간</span>
+                                        <span class="text">3일 (2020년 11월) </span>
+                                    </li>
+                                    <li>
+                                        <span class="title">제작 참여</span>
+                                        <span class="text">웹 디자인 및 퍼블리싱 (100%)</span>
+                                    </li>
+                                    <li>
+                                        <span class="title">제작 페이지</span>
+                                        <span class="text">메인페이지 1</span>
+                                        <p class="page">
+                                            <a
+                                                href="https://jaemushim.github.io/Interior/"
+                                                target="_blank"
+                                            >
+                                                https://jaemushim.github.io/Interior/
+                                            </a>
+                                            <span> (메인페이지)</span><br />
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <span class="title">홈페이지 유형</span>
+                                        <span class="text">반응형</span>
+                                    </li>
+                                    <li>
+                                        <span
+                                            >HTML5, CSS3, J-QUERY, JAVA SCRIPT, BEM 사용 <br />
+                                            PHOTOSHOP, ILLUSTRATOR 사용</span
+                                        >
+                                    </li>
+                                </ul>
+                                <a
+                                    href="https://jaemushim.github.io/Interior/"
+                                    target="_blank"
+                                    class="button"
+                                    ><div>VIEW SITE</div></a
+                                >
+                            </div>
+                        </div>
+                        <div class="row item cj">
+                            <div class="col-1">
+                                <a href="https://jaemushim.github.io/Leisure/" target="_blank">
+                                    <div class="img-holder">
+                                        <img src="img/leisure.jpg" alt="왕터연수원" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-2">
+                                <ul>
+                                    <li>
+                                        <span class="title">사이트명</span>
+                                        <span class="text">1st ave. 인테리어 (리뉴얼)</span>
+                                    </li>
+                                    <li>
+                                        <span class="title">제작기간</span>
+                                        <span class="text">3일 (2020년 10월) </span>
+                                    </li>
+                                    <li>
+                                        <span class="title">제작 참여</span>
+                                        <span class="text">웹 디자인 및 퍼블리싱 (100%)</span>
+                                    </li>
+                                    <li>
+                                        <span class="title">제작 페이지</span>
+                                        <span class="text">메인페이지 1</span>
+                                        <p class="page">
+                                            <a
+                                                href="https://jaemushim.github.io/Leisure/"
+                                                target="_blank"
+                                            >
+                                                https://jaemushim.github.io/Leisure/
+                                            </a>
+                                            <span> (메인페이지)</span><br />
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <span class="title">홈페이지 유형</span>
+                                        <span class="text">반응형</span>
+                                    </li>
+                                    <li>
+                                        <span
+                                            >HTML5, CSS3, BOOTSTRAP, J-QUERY <br />
+                                            PHOTOSHOP, ILLUSTRATOR 사용</span
+                                        >
+                                    </li>
+                                </ul>
+                                <a
+                                    href="https://jaemushim.github.io/Leisure/"
+                                    target="_blank"
+                                    class="button"
+                                    ><div>VIEW SITE</div></a
+                                >
+                            </div>
+                        </div>
+                        <div class="row item cj">
+                            <div class="col-1">
+                                <a href="https://jaemushim.github.io/mobile-shop/" target="_blank">
+                                    <div class="img-holder">
+                                        <img src="img/e_commerce.jpg" alt="모바일 쇼핑몰" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-2">
+                                <ul>
+                                    <li>
+                                        <span class="title">사이트명</span>
+                                        <span class="text">1st ave. 인테리어 (리뉴얼)</span>
+                                    </li>
+                                    <li>
+                                        <span class="title">제작기간</span>
+                                        <span class="text">3일 (2020년 9월) </span>
+                                    </li>
+                                    <li>
+                                        <span class="title">제작 참여</span>
+                                        <span class="text">웹 디자인 및 퍼블리싱 (100%)</span>
+                                    </li>
+                                    <li>
+                                        <span class="title">제작 페이지</span>
+                                        <span class="text">메인페이지 1</span>
+                                        <p class="page">
+                                            <a
+                                                href="https://jaemushim.github.io/mobile-shop/"
+                                                target="_blank"
+                                            >
+                                                href="https://jaemushim.github.io/mobile-shop/"
+                                            </a>
+                                            <span> (메인페이지)</span><br />
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <span class="title">홈페이지 유형</span>
+                                        <span class="text">반응형</span>
+                                    </li>
+                                    <li>
+                                        <span
+                                            >HTML5, CSS3, BOOTSTRAP, J-QUERY <br />
+                                            PHOTOSHOP, ILLUSTRATOR 사용</span
+                                        >
+                                    </li>
+                                </ul>
+                                <a
+                                    href="https://jaemushim.github.io/mobile-shop/"
+                                    target="_blank"
+                                    class="button"
+                                    ><div>VIEW SITE</div></a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <!-- typed.js CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+        <!-- AOS javascript CDN -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- Link index.js -->
+        <script type="text/javascript" src="js/jquery.sticky.js"></script>
+        <script src="js/jquery.nicescroll.js"></script>
+        <script type="text/javascript" src="js/typed.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
